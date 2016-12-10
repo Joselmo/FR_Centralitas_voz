@@ -26,21 +26,114 @@
 \begin{frame}{Apartados recomendables}
 \begin{enumerate}
 \item Introducción motivadora
-\item Protocolos, cabeceras, campos y funcionalidades.
 \item Ejemplos de uso, variantes, tipos, etc.
 \item Aplicaciones y plataformas existentes.
-\item Arquitectura software y hardware.
-\item Prestaciones técnicas del servicio/aplicación.
 \item Modelo de negocio y/o explotación.
+\item Prestaciones técnicas del servicio/aplicación.
+\item Arquitectura software y hardware.
+\item Protocolos, cabeceras, campos y funcionalidades.
 \item Demostración con WireShark.
 \item Uso de máquinas virtuales.
 \item otros.
 \end{enumerate}
 \end{frame}
 
-\begin{frame}{Introducción motivadora}
-http://www.telefoniavozip.com/voip/que-es-la-telefonia-ip.htm
 
+\begin{frame}{Introducción motivadora}
+% http://www.voz.com/centralita-virtual.php
+\begin{enumerate}[]
+\item \begin{center}
+¿Qué son las Centralitas de Voz?
+\end{center}
+\item 
+\item \begin{center}
+Es un Sistema Telefónico Avanzado por el cual se puede obtener tantas extensiones como se desee
+de forma virtual.
+\end{center}
+\item 
+\item \begin{center}
+Una extensión es cada puesto de teléfono.
+\end{center}
+
+\end{enumerate}
+\end{frame}
+
+
+\begin{frame}{Introducción motivadora}
+¿Qué ventajas tiene frente a una centralita física?\\
+
+\begin{enumerate}[$\bullet$]
+\item No se queda Obsoleta con el tiempo.
+\item No necesita canales de voz internos dentro de la centralita.
+% Es más se pueden crear tantos canales de voz internos como se necesite.
+\item No tiene coste de establecimiento de llamada en la red interna.
+\item Utiliza la red de internet.
+\item Un ahorro considerable con respecto a la telefonía tradicional.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Distribuidores de Centralitas}
+Algunas compañías de servicio de centralitas nacionales son:
+\begin{enumerate}
+\item netelip
+\item VOZ.com
+\item Megacall
+\end{enumerate}
+\vspace*{1cm}
+En el ámbito internacional están:
+\begin{enumerate}
+\item Digium (The Asterisk Company)
+\item 3CX
+\item AVOXI
+\end{enumerate}
+
+\end{frame}
+
+
+\begin{frame}{Ejemplos de uso}
+\begin{figure}[H] %con el [H] le obligamos a situar aquí la figura
+\centering
+\includegraphics[scale=0.4]{./imagenes/logos.png}
+\end{figure}
+
+\end{frame}
+
+
+\begin{frame}{Modelos de Negocio}
+Principalmente el modelo de negocio es el de vender la centralita de voz 
+ya montada y funcionando a empresas y entidades públicas por un coste 
+mensual dependiendo de la amplitud de la centralita, además del hardware
+necesario para su utilización como teléfonos switches etc.
+\\
+\vspace*{1cm}
+Aunque ``Asterisk'' se centra en dar un software gratuito para que terceros vendan centralitas a partir de este. El modelo de negocio
+de ``Asterisk'' es el de donaciones y patrocinadores.
+\end{frame}
+
+
+
+\begin{frame}{Protocolos VOIP}
+Para llevar a cabo la transmisión en tiempo real de una comunicación 
+utiliza un protocolo de tipo \textbf{VOIP} (Voice over IP), algunos más
+famosos son:
+\begin{enumerate}
+\item Skype, propiedad de \texttt{Microsoft}
+\item IAX2, original de \texttt{Asterisk} y libre
+\item SCCP, propiedad de \texttt{CISCO}
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Protocolo IAX2}
+Utiliza UDP y está orientado al streaming media, pero fue diseñado principalmente para llamadas de voz por IP.\\
+\vspace*{1cm}
+
+Por defecto utiliza el puerto 4569 y transmite los datos por ``in-band'' 
+lo que hace que el protocolo sea muy transparente para el cortafuegos y
+ así ser muy rápido en redes internas.\\
+\vspace*{0.5cm}
+Soporta ``\texttt{Trunking red}'', lo que permite que enviar varias llamadas a la vez en un único paquete de UDP, con el ahorro de latencia que esto supone. \\
+\vspace*{0.5cm}
++info en el RCF 5456
 \end{frame}
 
 \end{document}
