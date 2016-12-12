@@ -131,7 +131,7 @@ lo que hace que el protocolo sea muy transparente para el cortafuegos y
 \vspace*{0.5cm}
 Soporta ``\texttt{Trunking red}'', lo que permite enviar varias llamadas a la vez en un único paquete de UDP (datagram), con el ahorro de latencia que esto supone. \\
 \vspace*{0.5cm}
-+información en el RFC 5456
++info en el RCF 5456
 \end{frame}
 
 \end{document}
