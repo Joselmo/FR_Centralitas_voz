@@ -1,5 +1,6 @@
 \documentclass[11pt]{beamer}
 \usetheme{Madrid}
+\usepackage[spanish]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
 \usepackage{amsfonts}
@@ -23,18 +24,13 @@
 %\tableofcontents
 %\end{frame}
 
-\begin{frame}{Apartados recomendables}
+\begin{frame}{Apartados}
 \begin{enumerate}
 \item Introducción motivadora
-\item Ejemplos de uso, variantes, tipos, etc.
 \item Aplicaciones y plataformas existentes.
+\item Ejemplo de uso.
 \item Modelo de negocio y/o explotación.
-\item Prestaciones técnicas del servicio/aplicación.
-\item Arquitectura software y hardware.
-\item Protocolos, cabeceras, campos y funcionalidades.
-\item Demostración con WireShark.
-\item Uso de máquinas virtuales.
-\item otros.
+\item Protocolos.
 \end{enumerate}
 \end{frame}
 
@@ -133,5 +129,25 @@ Soporta ``\texttt{Trunking red}'', lo que permite enviar varias llamadas a la ve
 \vspace*{0.5cm}
 +información en el RFC 5456
 \end{frame}
+
+\begin{frame}{Protocolo Skype}
+Skype utiliza el protocolo de transporte UDP para la transmisión de datos y TCP para la identificación de los usuarios. \\
+\vspace*{0.3cm}
+Por defecto utiliza el puerto 1234.\\
+\vspace*{0.3cm}
+Skype utiliza el modelo P2P en vez del modelo cliente-servidor.
+
+\vspace*{1cm}
++información en el RFC 5688
+\end{frame}
+
+\begin{frame}{Protocolo MSNP24}
+Microsoft Notification Protocol. \\
+\vspace*{0.3cm}
+Este protocolo ha sido desarrollado por Microsoft para sus servicios de mensajería, como Skype (sustituyendo el protocolo Skype).\\
+\vspace*{0.3cm}
+Sobre este protocolo no hay demasiada información al ser privativo y actual.
+\end{frame}
+
 
 \end{document}
